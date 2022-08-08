@@ -1,0 +1,24 @@
+{
+  "properties": {
+    "connectionParameters": {
+      "api_key": {
+        "type": "securestring",
+        "uiDefinition": {
+          "displayName": "Token",
+          "description": "Your token for DocAI in the United States region.",
+          "tooltip": "Provide your token",
+          "constraints": {
+            "tabIndex": 2,
+            "clearText": false,
+            "required": "true"
+          }
+        }
+      }
+    },
+    "iconBrandColor": "#243B97",
+    "capabilities": [],
+    "policyTemplateInstances": [],
+    "publisher": "Zuva Inc.",
+    "stackOwner": "Zuva Inc."
+  }
+}
