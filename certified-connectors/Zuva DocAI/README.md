@@ -55,7 +55,7 @@ as images of the document.
 This connector makes use of a C# script to modify both requests and responses. As a result, the
 Power Automate connector functionality does not correspond one-to-one with the documentation for
 the underlying API. In particular, the connector:
-1. Exposes an extra `is_finished` boolean, which can be used to tell if the request is either complete OR failed
+1. Exposes an extra `is_finished` boolean, which can be used to tell if the request is either complete or failed
 2. All requests operate on single files, rather than batches of multiple files. If you need to process many files,
 use an "Apply to each" block in Power Automate, or by set up a trigger such that a separate flow applies to each individual file.
 
