@@ -21,7 +21,8 @@ Upload your file for analysis. Note that files automatically expire 48 hours aft
 
 Extract specific information from your document, such as its Title or particular legal clauses. You will
 need the field ID of the fields you would like to extract. Field IDs can be found in the [Field Library](https://docai.zuva.ai/field-library)
-(sign-in required), or from [AI trainer](https://zuva.ai/ai-trainer/) if you have trained custom fields.
+(sign-in required), from [AI trainer](https://zuva.ai/ai-trainer/) if you have trained custom fields, or
+programmatically using the [Fields endpoint](#fields).
 
 - `Create Field Extraction Request`: Initiate asynchronous extraction of fields from a document.
 - `Get Field Extraction Request Status`: Check the status of an existing extraction request.
@@ -50,6 +51,12 @@ as images of the document.
 - `Get OCR Request Status`: Check whether OCR processing of a file is complete.
 - `Get OCR Results Text`: Retrieve the text from a processed file.
 - `Get OCR Results Images`: Retrieve the images from a processed file.
+
+### Fields
+
+Fiend out what fields available to you.
+
+- `Get All Fields`: Return a list of all available fields (both built-in and custom).
 
 ## Differences between the connector and the DocAI API
 
