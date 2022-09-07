@@ -47,14 +47,14 @@ Categorize your document: is it a contract and, if so, what type of contract (re
 Obtain the text of your documents, regardless of their original file type (pdf, docx, png ...), as well
 as images of the document.
 
-- `Create OCR Request`: Initiate synchronous OCR processing of a file.
+- `Create OCR Request`: Initiate asynchronous OCR processing of a file.
 - `Get OCR Request Status`: Check whether OCR processing of a file is complete.
 - `Get OCR Results Text`: Retrieve the text from a processed file.
 - `Get OCR Results Images`: Retrieve the images from a processed file.
 
 ### Fields
 
-Fiend out what fields available to you.
+Find out what fields are available to you.
 
 - `Get All Fields`: Return a list of all available fields (both built-in and custom).
 
