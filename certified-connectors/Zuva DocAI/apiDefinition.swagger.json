@@ -3,7 +3,7 @@
   "info": {
     "version": "1.0.0",
     "title": "Zuva DocAI",
-    "description": "The Zuva DocAI connector enables you to extract information from your contracts.",
+    "description": "Embed Contracts AI into your product workflows using Zuva DocAI. No need for AI development from the ground up, leverage the DocAI APIs to extract information from your contracts.",
     "contact": {
       "name": "Zuva Support",
       "url": "https://zuva.ai/support/",

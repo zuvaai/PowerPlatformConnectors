@@ -19,9 +19,11 @@ Upload your file for analysis. Note that files automatically expire 48 hours aft
 
 ### Extraction
 
-Extract specific information from your document, such as its Title or particular legal clauses.
+Extract specific information from your document, such as its Title or particular legal clauses. You will
+need the field ID of the fields you would like to extract. Field IDs can be found in the [Field Library](https://docai.zuva.ai/field-library)
+(sign-in required), or from [AI trainer](https://zuva.ai/ai-trainer/) if you have trained custom fields.
 
-- `Create Field Extraction Request`: Initiate asynchronous extraction of fields from a document
+- `Create Field Extraction Request`: Initiate asynchronous extraction of fields from a document.
 - `Get Field Extraction Request Status`: Check the status of an existing extraction request.
 - `Get Field Extraction Request Text Results`: Get text results from a completed extraction request.
 
@@ -29,35 +31,33 @@ Extract specific information from your document, such as its Title or particular
 
 Discover the language of your document.
 
-- `Create Language Classification Request`: Initiate asynchronous classification of the document language
-- `Get Language Classification Request Status`: Get status and results of language classification
+- `Create Language Classification Request`: Initiate asynchronous classification of the document language.
+- `Get Language Classification Request Status`: Get status and results of language classification.
 
 ### Document Classification
 
 Categorize your document: is it a contract and, if so, what type of contract (real estate agreement, employment agreement etc.)?
 
-- `Create Document Classification Request`: Initiate asynchronous classification of the document type
-- `Get Document Classification Request Status`: Get status and results of document classification
+- `Create Document Classification Request`: Initiate asynchronous classification of the document type.
+- `Get Document Classification Request Status`: Get status and results of document classification.
 
 ### Optical Character Recognition (OCR)
 
 Obtain the text of your documents, regardless of their original file type (pdf, docx, png ...), as well
 as images of the document.
 
-- `Create OCR Request`: Initiate synchronous OCR processing of a file
-- `Get OCR Request Status`: Check whether OCR processing of a file is complete
-- `Get OCR Results Text`: Retrieve the text from a processed file
-- `Get OCR Results Images`: Retrieve the images from a processed file
-- `Get File Layouts`: Retrieve the layouts from a processed file
+- `Create OCR Request`: Initiate synchronous OCR processing of a file.
+- `Get OCR Request Status`: Check whether OCR processing of a file is complete.
+- `Get OCR Results Text`: Retrieve the text from a processed file.
+- `Get OCR Results Images`: Retrieve the images from a processed file.
 
 ## Differences between the connector and the DocAI API
 
 This connector makes use of a C# script to modify both requests and responses. As a result, the
-Power Automate connector functionality does not correspond one-to-one with the documentation for
+connector functionality does not correspond one-to-one with the documentation for
 the underlying API. In particular, the connector:
 1. Exposes an extra `is_finished` boolean, which can be used to tell if the request is either complete or failed
-2. All requests operate on single files, rather than batches of multiple files. If you need to process many files,
-use an "Apply to each" block in Power Automate, or by set up a trigger such that a separate flow applies to each individual file.
+2. All requests operate on single files, rather than batches of multiple files.
 
 ## Known issues and limitations
 
