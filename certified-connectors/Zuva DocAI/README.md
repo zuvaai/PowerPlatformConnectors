@@ -4,7 +4,7 @@ The Zuva DocAI connector enables developers to implement contracts AI features i
 
 ## Prerequisites
 
-You will need a Zuva account and a DocAI token for the United States region.
+You will need a Zuva account and a DocAI token.
 
 See the [DocAI documentation](https://zuva.ai/documentation/) for information about creating an account and token.
 

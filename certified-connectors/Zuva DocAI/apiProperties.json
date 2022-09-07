@@ -5,7 +5,7 @@
         "type": "securestring",
         "uiDefinition": {
           "displayName": "Token",
-          "description": "Your token for DocAI in the United States region.",
+          "description": "Your DocAI token",
           "tooltip": "Provide your token",
           "constraints": {
             "tabIndex": 2,
@@ -13,12 +13,32 @@
             "required": "true"
           }
         }
+      },
+    "hostName": {
+      "type": "string",
+      "uiDefinition": {
+        "constraints": {
+          "required": "true"
+        },
+        "description": "e.g. us.app.zuva.ai",
+        "displayName": "DocAI Hostname",
+        "default": "hostname of a DocAI region, e.g. us.app.zuva.ai",
+        "tooltip": "Provide the hostname of a DocAI region, such as us.app.zuva.ai"
       }
+    }
     },
     "iconBrandColor": "#20399D",
     "capabilities": [],
-    "policyTemplateInstances": [],
     "publisher": "Zuva Inc.",
-    "stackOwner": "Zuva Inc."
+    "stackOwner": "Zuva Inc.",
+    "policyTemplateInstances": [
+      {
+        "parameters": {
+          "x-ms-apimTemplateParameter.urlTemplate": "https://@connectionParameters('hostName')/api/v2/"
+        },
+        "templateId": "dynamichosturl",
+        "title": "Route to correct DocAI region"
+      }
+    ]
   }
 }
